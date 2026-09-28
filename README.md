@@ -1,15 +1,15 @@
 # CommentLater
 
-A Chrome extension that hides YouTube comments until you've actually watched the video.
+A Chrome extension to fix your attention span that hides YouTube comments until you've finished the video.
 
-Instead of the comments, you see a banner: **"hey hey go back to watching the video first"**, along with how much of the video you've watched so far.
+Instead of the comments, you see a banner: **"hey hey go back to watching the video first"**, along with how much (%) of the video you've watched so far.
 
 <!-- Add a screenshot of the banner here: drag the image into this file while editing on GitHub -->
 ![CommentLater banner](screenshot.png)
 
 ## How it works
 
-1. On any YouTube watch page, the comment section is hidden and replaced with a banner.
+1. On any YouTube watch page, the comment section is hidden and replaced with the banner.
 2. While the video plays, the extension records every second you genuinely watch.
 3. Skipping ahead doesn't count. Any jump of more than 3 seconds is ignored, so dragging to the end won't unlock anything.
 4. Once you've watched 95% of the video, the comments appear.
@@ -23,7 +23,7 @@ Other details:
 
 ## Install
 
-CommentLater isn't on the Chrome Web Store yet, so you load it manually:
+CommentLater isn't on the Chrome Web Store so it needs to be manually loaded in:
 
 1. Click **Code > Download ZIP** on this page and unzip it.
 2. Open Chrome and go to `chrome://extensions`.
@@ -33,7 +33,7 @@ CommentLater isn't on the Chrome Web Store yet, so you load it manually:
 
 ## Settings
 
-Open `content.js` and edit the values at the top:
+Open `content.js` ,edit the values at the top:
 
 | Setting | Default | What it does |
 |---|---|---|
@@ -52,7 +52,7 @@ CommentLater/
 └── icons/          # 16, 48 and 128 px icons
 ```
 
-## Known limitations
+## limitations
 
 - YouTube sometimes renames its page elements. If the comments stop hiding, the selector `ytd-comments#comments` in `styles.css` and `content.js` may need updating.
 - Playing a video in a background tab can make progress tracking less precise.
@@ -64,7 +64,8 @@ JavaScript, CSS, and a Chrome extension manifest (no frameworks or dependencies)
 
 ## Credits
 
-Icon artwork: <!-- add the artist's name, the work's title, and where you found it -->
+Icon artwork: taken from Internet Archive (creative common) Edmund Dulac’s Fairy-Book: Fairy Tales of the Allied Nations
+New York: G. H. Doran Company [1916]
 
 ## License
 
