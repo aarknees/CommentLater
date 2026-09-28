@@ -1,0 +1,30 @@
+/* Hide the real comments while locked */
+body.wbc-locked ytd-comments#comments {
+  display: none !important;
+}
+
+/* The message that takes the comments' place */
+#wbc-banner {
+  display: none;
+  margin: 24px 0;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  background: #0095B6;
+  color: #f5e9c8;
+  border: 2px solid #DC143C;
+}
+
+#wbc-banner small {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+body.wbc-locked #wbc-banner {
+  display: block;
+}
